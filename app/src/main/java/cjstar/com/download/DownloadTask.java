@@ -10,7 +10,7 @@ import java.net.URL;
 import cjstar.com.cache.LRUFileCache;
 
 /**
- * @author  Created by xuchun on 15/8/24.
+ * @author  Created by CJstar on 15/8/24.
  * usually, subclasses of AsyncTask are declared inside the activity class.
  * that way, you can easily modify the UI thread from here
  */

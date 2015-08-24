@@ -1,7 +1,7 @@
 package cjstar.com.cache;
 
 /**
- * Created by xuchun on 15/8/24.
+ * Created by CJstar on 15/8/24.
  */
 public final class FileCacheOptions {
     /**
