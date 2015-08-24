@@ -75,6 +75,10 @@ public class LRUFileCache implements FileCache {
         File file = new File(dir + "/" + filename);
         OutputStream outStream;
         try {
+            if(file.exists()){
+                file.delete();
+            }
+            
             file.createNewFile();
             outStream = new FileOutputStream(file);
             while (inputStream.available()!=0){
