@@ -1,4 +1,4 @@
-package cjstar.com.imagefilecache;
+package cjstar.com.ui;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

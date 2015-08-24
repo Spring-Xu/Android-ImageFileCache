@@ -1,4 +1,4 @@
-package cjstar.com.imagefilecache;
+package cjstar.com.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
