@@ -97,6 +97,9 @@ public class LRUFileCache implements FileCache {
 
         if(file!=null&&file.exists()){
             updateFileTime(file);
+
+        }else{
+            file = null;
         }
 
         return file;
@@ -134,6 +137,9 @@ public class LRUFileCache implements FileCache {
     private void freeSpaceIfNeeded(){
         File dir = new File(options.getCacheRootPath());
         File[] files = dir.listFiles();
+        if(files==null){
+            return;
+        }
 
         int dirSize = 0;
         for (int i = 0; i < files.length; i++) {
@@ -151,6 +157,17 @@ public class LRUFileCache implements FileCache {
             Arrays.sort(files, new FileLastModifSort());
             // delete files
             for (int i = 0; i < removeFactor; i++) {
+                if (files[i].getName().contains(WHOLESALE_CONV)) {
+                    files[i].delete();
+                }
+            }
+        }
+
+        //if file count is larger than max count, delete the last
+        if(files.length>options.getMaxFileCount()){
+            Arrays.sort(files, new FileLastModifSort());
+            // delete files
+            for (int i = options.getMaxFileCount(); i < files.length; i++) {
                 if (files[i].getName().contains(WHOLESALE_CONV)) {
                     files[i].delete();
                 }

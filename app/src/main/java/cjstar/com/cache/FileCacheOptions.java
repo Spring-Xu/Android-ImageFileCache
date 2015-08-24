@@ -19,7 +19,7 @@ public final class FileCacheOptions {
     /**
      * if it is false, will not cache files
      */
-    private boolean isUseFileCache;
+    private boolean isUseFileCache = true;
 
     public String getCacheRootPath() {
         return cacheRootPath;
@@ -58,7 +58,10 @@ public final class FileCacheOptions {
     }
 
     private FileCacheOptions(Builder builder){
-
+        setCacheRootPath(builder.getCacheRootPath());
+        setIsUseFileCache(builder.isUseFileCache());
+        setMaxCacheSize(builder.getMaxCacheSize());
+        setMaxFileCount(builder.getMaxFileCount());
     }
 
     /**
