@@ -171,7 +171,7 @@ public class LRUFileCache implements FileCache {
         if(files.length>options.getMaxFileCount()){
             Arrays.sort(files, new FileLastModifSort());
             // delete files
-            for (int i = options.getMaxFileCount(); i < files.length; i++) {
+            for (int i = 0;i<files.length-options.getMaxFileCount();  i++) {
                 if (files[i].getName().contains(WHOLESALE_CONV)) {
                     files[i].delete();
                 }
