@@ -1,4 +1,4 @@
-package cjstar.com.image;
+package cjstar.com.filecachelibrary.image;
 
 /**
  * Apache License

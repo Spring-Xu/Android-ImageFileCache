@@ -1,4 +1,4 @@
-package cjstar.com.cache;
+package cjstar.com.filecachelibrary.cache;
 
 import java.io.File;
 import java.io.InputStream;

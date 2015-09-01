@@ -1,4 +1,4 @@
-package cjstar.com.cache;
+package cjstar.com.filecachelibrary.cache;
 
 /**
  * Created by CJstar on 15/8/24.

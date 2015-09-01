@@ -1,4 +1,4 @@
-package cjstar.com.download;
+package cjstar.com.filecachelibrary.download;
 
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
@@ -9,8 +9,8 @@ import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import cjstar.com.cache.LRUFileCache;
-import cjstar.com.image.ImageLoaderUtils;
+import cjstar.com.filecachelibrary.cache.LRUFileCache;
+import cjstar.com.filecachelibrary.image.ImageLoaderUtils;
 import cjstar.com.ui.R;
 
 /**

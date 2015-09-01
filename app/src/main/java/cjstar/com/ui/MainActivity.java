@@ -13,9 +13,9 @@ import android.widget.ImageView;
 
 import java.io.File;
 
-import cjstar.com.cache.FileCacheOptions;
-import cjstar.com.cache.LRUFileCache;
-import cjstar.com.image.ImageHelper;
+import cjstar.com.filecachelibrary.cache.FileCacheOptions;
+import cjstar.com.filecachelibrary.cache.LRUFileCache;
+import cjstar.com.filecachelibrary.image.ImageHelper;
 
 public class MainActivity extends AppCompatActivity {
 

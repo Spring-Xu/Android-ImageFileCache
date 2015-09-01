@@ -1,4 +1,4 @@
-package cjstar.com.cache;
+package cjstar.com.filecachelibrary.cache;
 
 import android.os.Environment;
 import android.os.StatFs;

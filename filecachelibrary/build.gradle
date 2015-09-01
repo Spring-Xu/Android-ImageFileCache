@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 22
     buildToolsVersion "23.0.0 rc3"
 
     defaultConfig {
-        applicationId "cjstar.com.imagefilecache"
         minSdkVersion 8
         targetSdkVersion 22
         versionCode 1
@@ -22,5 +21,4 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
-    compile project(':filecachelibrary')
 }

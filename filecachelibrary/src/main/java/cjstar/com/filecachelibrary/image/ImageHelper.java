@@ -1,10 +1,10 @@
-package cjstar.com.image;
+package cjstar.com.filecachelibrary.image;
 
 import android.os.AsyncTask;
 import android.os.Build;
 import android.widget.ImageView;
 
-import cjstar.com.download.DownloadTask;
+import cjstar.com.filecachelibrary.download.DownloadTask;
 import cjstar.com.ui.R;
 
 /**
