@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     hodler = (ViewHolder) convertView.getTag();
                 }
 
-                ImageHelper.getInstance().showImage(hodler.imageView, getItem(position));
+                ImageHelper.getInstance().showImage(hodler.imageView, getItem(position),R.drawable.dd);
                 return convertView;
             }
 

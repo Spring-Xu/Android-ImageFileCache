@@ -11,7 +11,6 @@ import java.net.URL;
 
 import cjstar.com.filecachelibrary.cache.LRUFileCache;
 import cjstar.com.filecachelibrary.image.ImageLoaderUtils;
-import cjstar.com.ui.R;
 
 /**
  * @author  Created by CJstar on 15/8/24.
@@ -21,8 +20,8 @@ import cjstar.com.ui.R;
 public class DownloadTask extends AsyncTask<String, Integer, Bitmap> {
 
     WeakReference<ImageView> weakReference;
-    public DownloadTask(ImageView imageView) {
-        imageView.setImageResource(R.drawable.dd);
+    public DownloadTask(ImageView imageView,int defaultId) {
+        imageView.setImageResource(defaultId);
         weakReference = new WeakReference(imageView);
     }
 
